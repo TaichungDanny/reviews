@@ -6,3 +6,8 @@ with open ('reviews.txt', 'r') as f:
         count += 1
         if count % 1000 == 0:
             print(len(data))
+sum = 0
+for i in data:
+    sum += len(i)
+average = sum / count
+print(average)
